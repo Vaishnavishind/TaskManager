@@ -1,0 +1,7 @@
+com\example\demo\UserRepo.class
+com\example\demo\MyController.class
+com\example\demo\User.class
+com\example\demo\Task.class
+com\example\demo\TaskManagApplication.class
+com\example\demo\ServletInitializer.class
+com\example\demo\TaskRepo.class
