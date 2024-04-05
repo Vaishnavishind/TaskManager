@@ -1,0 +1,43 @@
+
+<div *ngIf="userid>0">
+    
+
+    <button (click)="readAllTask()">ReadAllTask</button>
+  
+    <table border="1">
+      <thead>
+        <tr>
+        
+          <th>Details</th>
+          <th>Action</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of tasks">
+          <td>{{task.details}}</td>
+          <td>
+            <button (click)="delete(task.id)">Delete</button>
+          </td>
+         
+          <!-- <td>
+            <button (click)="delete()">Delete</button>
+          </td> -->
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    Add New task <br>
+    Details: <input type="text" [(ngModel)]="details"><br>
+              <button (click)="addTask()">Add Task</button>
+             
+    
+  </div>
+ 
+  
+
+  
+
+ 
+
